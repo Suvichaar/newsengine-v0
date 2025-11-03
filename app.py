@@ -783,11 +783,6 @@ def generate_storytitle(title, summary, content_language="English"):
 # === Streamlit UI ===
 st.title("🧠 Web Story Content Generator")
 
-# Only one tab now - all in one!
-
-# 🧠 Streamlit UI
-st.title("🧠 Web Story Generator")
-
 url = st.text_input("Enter a news article URL")
 persona = "Expert news anchor"  # Fixed persona
 content_language = "English"  # Fixed to English only
