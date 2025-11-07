@@ -291,9 +291,9 @@ Article:
     headline = article_text.split("\n")[0].strip().replace('"', '')
 
     if content_language == "Hindi":
-        slide1_prompt = f"Generate a greeting and news headline narration in Hindi for the story: {headline}. Maximum 200 characters."
+        slide1_prompt = f"Generate a news headline narration in Hindi for the story: {headline}. Maximum 200 characters."
     else:
-        slide1_prompt = f"Generate a greeting and headline intro narration in English for: {headline}. Maximum 200 characters."
+        slide1_prompt = f"Generate a headline intro narration in English for: {headline}. Maximum 200 characters."
 
     slide1_response = client.chat.completions.create(
         model="gpt-5-chat",
